@@ -1,37 +1,19 @@
-## Welcome to GitHub Pages
+# Capture-The-Flags
+CTF storage area and writeups
 
-You can use the [editor on GitHub](https://github.com/aingram702/CTF-WriteUps/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+Includes TryHackMe, CTFLearn, Enigma-Group, and Metasploitable, with Metasploitable2 and Metasploitable3 coming soon.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## Color-Legend:
+  Green-text= an answer or a title.
+  
+  Dull-Yellow-text= important information.
+  
+  Bright-Yellow-text= writeup pages or data-only pages.
+  
+  Pink-text: URLs and weblinks. Some documents have terminal output in pink also.
+  
+  Red-text: scans and commands used.
+  
 
-### Markdown
+### ALL documents created with CherryTree
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/aingram702/CTF-WriteUps/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
