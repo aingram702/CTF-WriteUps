@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cherrytree>
+  <bookmarks list=""/>
+  <node name="Windows Forensics" unique_id="1" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="14" is_bold="1" foreground="#ff0000" ts_creation="1613907797" ts_lastsave="1613907817">
+    <node name="Task 1 Investigating Windows" unique_id="2" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="8" is_bold="1" foreground="#ffa500" ts_creation="1613907817" ts_lastsave="1613910910">
+      <rich_text>This  is a challenge that is exactly what is says on the tin, there are a few  challenges around investigating a windows machine that has been  previously compromised.
+Connect to the machine using RDP. The credentials the machine are as follows:
+Username: Administrator
+Password: letmein123!
+
+
+
+
+</rich_text>
+      <rich_text justification="left"></rich_text>
+      <rich_text>
+
+PS:&gt; </rich_text>
+      <rich_text foreground="#ffff00000000" weight="heavy">systeminfo /fo csv | ConvertFrom-Csv | select OS*, System*, Hotfix* | Format-List</rich_text>
+      <rich_text>
+          
+</rich_text>
+      <rich_text scale="h1" foreground="#0000ffff0000" weight="heavy">  Windows Server 2016</rich_text>
+      <rich_text>
+  
+  
+  
+  
+</rich_text>
+      <rich_text justification="left"></rich_text>
+      <rich_text>
+
+PS:&gt; </rich_text>
+      <rich_text foreground="#ffff00000000" weight="heavy">quser</rich_text>
+      <rich_text>
+
+</rich_text>
+      <rich_text scale="h1" foreground="#0000ffff0000" weight="heavy">Administrator</rich_text>
+      <rich_text>
+
+
+</rich_text>
+      <rich_text justification="left"></rich_text>
+      <rich_text>
+
+PS:&gt; </rich_text>
+      <rich_text foreground="#ffff00000000" weight="heavy">net user john | findstr /C:"Last logon"</rich_text>
+      <rich_text>
+
+</rich_text>
+      <rich_text scale="h1" foreground="#0000ffff0000" weight="heavy">03/02/2019 5:48:32 PM</rich_text>
+      <rich_text>
+
+
+
+
+</rich_text>
+      <rich_text weight="heavy">run registry editor (regedit) and go to </rich_text>
+      <rich_text foreground="#ffffa5a50000" weight="heavy">HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Run</rich_text>
+      <rich_text weight="heavy">
+
+the value = C:\TMP\p.exe -s \\</rich_text>
+      <rich_text foreground="#0000ffff0000" weight="heavy">10.34.2.3</rich_text>
+      <rich_text weight="heavy"> 'net user' &gt; C:\TMP\o2.txt</rich_text>
+      <rich_text>
+
+</rich_text>
+      <rich_text scale="h1" foreground="#0000ffff0000" weight="heavy">10.34.2.3</rich_text>
+      <rich_text>
+
+
+
+
+</rich_text>
+      <rich_text weight="heavy">use Event Viewer 
+
+</rich_text>
+      <rich_text scale="h1" foreground="#0000ffff0000" weight="heavy">Jenny,Guest</rich_text>
+      <rich_text>
+
+
+
+
+</rich_text>
+      <rich_text weight="heavy">run Task Scheduler to find malicious task
+
+</rich_text>
+      <rich_text scale="h1" foreground="#0000ffff0000" weight="heavy">clean file system</rich_text>
+      <rich_text>
+
+
+
+
+
+</rich_text>
+      <rich_text scale="h1" foreground="#0000ffff0000" weight="heavy">nc.ps1</rich_text>
+      <rich_text>
+
+
+
+
+</rich_text>
+      <rich_text scale="h1" foreground="#0000ffff0000" weight="heavy">1348</rich_text>
+      <rich_text>
+
+
+
+
+
+</rich_text>
+      <rich_text scale="h1" foreground="#0000ffff0000" weight="heavy">never</rich_text>
+      <rich_text>
+
+
+
+
+
+</rich_text>
+      <rich_text scale="h1" foreground="#0000ffff0000" weight="heavy">03/02/2019</rich_text>
+      <rich_text>
+
+
+
+
+
+</rich_text>
+      <rich_text scale="h1" foreground="#0000ffff0000" weight="heavy">03/02/2019 4:04:49 PM</rich_text>
+      <rich_text>
+
+
+
+
+
+</rich_text>
+      <rich_text weight="heavy">find in Event Viewer</rich_text>
+      <rich_text>
+
+</rich_text>
+      <rich_text scale="h1" foreground="#0000ffff0000" weight="heavy">mimikatz</rich_text>
+      <rich_text>
+
+
+
+
+</rich_text>
+      <rich_text scale="h1" foreground="#0000ffff0000" weight="heavy">76.32.97.132</rich_text>
+      <rich_text>
+
+
+
+
+</rich_text>
+      <rich_text scale="h1" foreground="#0000ffff0000" weight="heavy">.jsp</rich_text>
+      <rich_text>
+
+
+
+
+
+</rich_text>
+      <rich_text scale="h1" foreground="#0000ffff0000" weight="heavy">1337</rich_text>
+      <table char_offset="296" justification="left" col_min="60" col_max="60">
+        <row>
+          <cell>#1</cell>
+          <cell>Whats the version and year of the windows machine?</cell>
+        </row>
+      </table>
+      <table char_offset="431" justification="left" col_min="60" col_max="60">
+        <row>
+          <cell>#2</cell>
+          <cell>Which user logged in last?</cell>
+        </row>
+      </table>
+      <table char_offset="462" justification="left" col_min="60" col_max="60">
+        <row>
+          <cell>#3</cell>
+          <cell>When did John log onto the system last?
+
+Answer format: MM/DD/YYYY H:MM:SS AM/PM</cell>
+        </row>
+      </table>
+      <table char_offset="535" justification="left" col_min="60" col_max="60">
+        <row>
+          <cell>#4</cell>
+          <cell>What IP does the system connect to when it first starts?</cell>
+        </row>
+      </table>
+      <table char_offset="724" justification="left" col_min="60" col_max="60">
+        <row>
+          <cell>#5</cell>
+          <cell>What two accounts had administrative privileges (other than the Administrator user)?
+
+Answer format: username1, username2</cell>
+        </row>
+      </table>
+      <table char_offset="760" justification="left" col_min="60" col_max="60">
+        <row>
+          <cell>#6</cell>
+          <cell>Whats the name of the scheduled task that is malicous.</cell>
+        </row>
+      </table>
+      <table char_offset="827" justification="left" col_min="60" col_max="60">
+        <row>
+          <cell>#7</cell>
+          <cell>What file was the task trying to run daily?</cell>
+        </row>
+      </table>
+      <table char_offset="839" justification="left" col_min="60" col_max="60">
+        <row>
+          <cell>#8</cell>
+          <cell>What port did this file listen locally for?</cell>
+        </row>
+      </table>
+      <table char_offset="850" justification="left" col_min="60" col_max="60">
+        <row>
+          <cell>#9</cell>
+          <cell>When did Jenny last logon?</cell>
+        </row>
+      </table>
+      <table char_offset="862" justification="left" col_min="60" col_max="60">
+        <row>
+          <cell>#10</cell>
+          <cell>At what date did the compromise take place?
+
+Answer format: MM/DD/YY</cell>
+        </row>
+      </table>
+      <table char_offset="879" justification="left" col_min="60" col_max="60">
+        <row>
+          <cell>#11</cell>
+          <cell>At what time did Windows first assign special privileges to a new logon?
+
+Answer format: MM/DD/YYYY HH:MM:SS AM/PM</cell>
+        </row>
+      </table>
+      <table char_offset="907" justification="left" col_min="60" col_max="60">
+        <row>
+          <cell>#12</cell>
+          <cell>What tool was used to get Windows passwords?</cell>
+        </row>
+      </table>
+      <table char_offset="943" justification="left" col_min="60" col_max="60">
+        <row>
+          <cell>#13</cell>
+          <cell>What was the attackers external control and command servers IP?</cell>
+        </row>
+      </table>
+      <table char_offset="961" justification="left" col_min="60" col_max="60">
+        <row>
+          <cell>#14</cell>
+          <cell>What was the extension name of the shell uploaded via the servers website?</cell>
+        </row>
+      </table>
+      <table char_offset="972" justification="left" col_min="60" col_max="60">
+        <row>
+          <cell>#15</cell>
+          <cell>What was the last port the attacker opened?</cell>
+        </row>
+      </table>
+    </node>
+  </node>
+</cherrytree>
